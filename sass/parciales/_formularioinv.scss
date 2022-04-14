@@ -1,0 +1,74 @@
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.contenedor{
+    width: 400px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 7px rgba(0,0,0,0.05);
+    margin-top: 40px;
+}
+
+.formInv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.encabezado{
+    &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    &__img {
+        height: 20px;
+        padding-right: 5px;
+    }
+}
+
+.place-text {
+    border: none;
+    background-color: $color-secu;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: $font-0-8;
+    padding: 12px;
+    width: 100%;
+    border-radius: 7px;
+}
+.formInv-control, input:focus {
+    outline: none;
+}
+
+.formInv-control p{
+    visibility: hidden;
+    font-size: $font-0-8;
+    font-weight: $font-300;
+    text-align: right;
+}
+
+.formInv-control.error p{
+    visibility: visible;
+    color: $color-ppal;
+    margin-bottom: 10px;
+}
+
+.listadoInv {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding-top: 4px;
+    background-color: $color-enfasis;
+    border-radius: 25px;
+}
+
+

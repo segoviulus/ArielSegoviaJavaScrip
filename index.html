@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Invitados</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Me CSS -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<!--
+    HEADER
+-->
+
+<nav class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header__topbar">
+                <img class="header__icon1" src="./img/icon/whatsapp.svg" alt="">
+                <div class="text1">3412471088</div>
+                <img class="header__icon2" src="./img/icon/email.svg" alt="">
+                <div class="text1">hola@dosgrullas.com</div>
+            </div>
+        </div>   
+    </div>
+    <div class="navbar navbar-expand-lg header__menu">
+        <div class="container-fluid">
+            <a class="navbar-brand header__link" href="#"><img class="header__img" src="./img/svg/dosgrullasw.svg" alt="Logo DG"></a>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container-fluid contenedor">
+        <div class="row">
+            <div class="encabezado__form">
+                <img class="encabezado__img" src="./img/svg/logonegro.svg" alt="perfilTest">
+                <div class="titulo">Agregar un nuevo invitado</div>
+            </div>
+        </div>
+            <form class="formInv" id="formInv">
+                <div class="divInv" id="divInv">
+                    <div class="formInv-control">
+                        <label class="text2" for="nombreInv">Nombre del invitado</label>
+                        <input class="text1 place-text" type="text" placeholder="Nombre" id="nombreInv">
+                        <p></p>
+                    </div>
+                    <div class="formInv-control">
+                        <label class="text2" for="apellidoInv">Apellido del invitado</label>
+                        <input class="text1 place-text" type="text" placeholder="Apellido" id="apellidoInv">
+                        <p></p>
+                    </div>
+                    <div class="formInv-control">
+                        <label class="text2" for="grupoInv">Grupo</label>
+                        <input class="text1 place-text" type="text" placeholder="Adulto o Menor" id="grupoInv">
+                        <p></p>
+                    </div>
+                    <div class="formInv-control">
+                        <label class="text2" for="menuInv">Menu</label>
+                        <input class="text1 place-text" type="text" placeholder="Adulto, Menor o Vegetariano" id="menuInv">
+                        <p></p>
+                    </div>
+                    <button class="btnb place-text" type="submit">Agregar Invitado</button>
+                </div>
+            </form>
+    </div>
+
+    <div>
+        <button class="btnb" id="btnMostrarInv">Actualizar Invitados</button>
+        <div id="divMostratInv"></div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+      <!--JS Propio-->
+    <script src="script.js" ></script>
+</body>
+
+</html>

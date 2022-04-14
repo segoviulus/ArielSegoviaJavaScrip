@@ -1,0 +1,61 @@
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px; 
+}
+
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0;
+    background-color: transparent;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+@mixin icon {
+    color: $color-hover;
+    height: 20px;
+}
+
+.header{
+    &__topbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-enfasis;
+        height: 35px;}
+    &__icon1{
+        @include icon;
+    }
+    &__icon2{
+        @include icon;
+        padding-left: 30px;
+    }
+    &__menu{
+        padding: 20px 40px 20px 40px;
+        height: 90px;
+        background-color: $color-ppal;
+    }
+    &__menuGen{
+        padding: 20px 40px 20px 40px;
+        height: 90px;
+        background: $color-ppal;
+    }
+    &__btn{
+        padding: 20px 40px;
+        background-color: $color-enfasis;
+    }
+    &__img{
+        height: 40px;}
+    &__link {
+        color: $color-light;
+        font-family: $font;
+        font-weight: $font-400;
+        font-size: 1rem;
+        text-transform: uppercase;
+        &:hover {
+        color: $color-hover; 
+        text-decoration: none}
+    }
+}

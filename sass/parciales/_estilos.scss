@@ -1,0 +1,103 @@
+.centrartext{
+    text-align: center;
+}
+
+.text1{
+    color: $color-ppal;
+    font-family: $font;
+    font-size: $font-0-8;
+    padding-left: 3px;
+}
+
+.text2{
+    color: $color-ppal;
+    font-family: $font;
+    font-size: $font-1;
+    padding-left: 3px;
+}
+
+.text2w{
+    color: $color-light;
+    font-family: $font;
+    font-size: $font-1;
+}
+
+.titulo{
+    color: $color-ppal;
+    font-family: $font;
+    font-size: $font-1-2;
+    line-height: 3.3rem;
+    font-weight: $font-600;
+}
+
+@mixin sub {
+    font-size: $font-1-2;
+    font-family: $font;
+    font-weight: $font-600;
+    letter-spacing: 0.25rem;
+}
+.sub{
+    @include sub;
+    color: $color-ppal;
+}
+
+.subw{
+    @include sub;
+    color: $color-light;
+}
+
+.subp{
+    @include sub;
+    color: $color-ppal;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+@mixin btn {
+    font-family: $font;
+    font-size: $font-0-8;
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+
+.btnw{
+    @include btn;
+    margin-top: 30px;
+    color: $color-light;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: $color-light;
+    &:hover{
+        background-color: $color-hover;
+        border-color: $color-hover;
+    }
+}
+
+.btnb{
+    @include btn;
+    margin-top: 30px;
+    color: $color-hover;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: $color-hover;
+    &:hover{
+        color: $color-light;
+        background-color: $color-ppal;
+        border-color: $color-ppal;
+    }
+}
+
+.btnh{
+    @include btn;
+    color: $color-enfasis;
+    text-decoration: none;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: $color-enfasis;
+    margin-left: 7px;
+    &:hover{
+        border-color: $color-light;
+        color: $color-light;
+    }
+}
+
